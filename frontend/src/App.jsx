@@ -18,9 +18,10 @@ export default function App() {
 
   return (
     <div className="app">
-      <Navbar />
+      Navbar
       <div className="site-container">
         {/* <MainContent /> */}
+        l
       </div>
       <Footer/>
     </div>
