@@ -89,115 +89,115 @@ export default function ApplicationForm({ clubName, abbr, onClose }) {
               </div>
             </div>
 
-              <div className="form-row">
-                <div className="form-group">
-                  <label>Division <span className="required">*</span></label>
-                  <select
-                    name="division"
-                    value={formData.division}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="">Select Your Division</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                  </select>
-                </div>
-
-                <div className="form-group">
-                  <label>Registration Number <span className="required">*</span></label>
-                  <input
-                    type="text"
-                    name="registrationNumber"
-                    placeholder="Enter registration number"
-                    value={formData.registrationNumber}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label>Phone Number <span className="required">*</span></label>
-                  <input
-                    type="tel"
-                    name="phoneNumber"
-                    placeholder="Enter 10-digit phone number"
-                    pattern="[0-9]{10}"
-                    value={formData.phoneNumber}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-
-                <div className="form-group">
-                  <label>Priority (1-5) <span className="required">*</span></label>
-                  <input
-                    type="number"
-                    name="priority"
-                    placeholder="Rate GDSC priority (1-5)"
-                    min="1"
-                    max="5"
-                    value={formData.priority}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="form-group full-width">
-                <label>Why do you want to join {abbr}? <span className="required">*</span></label>
-                <textarea
-                  name="motivation"
-                  placeholder={`Tell us your motivation to join ${clubName}...`}
-                  value={formData.motivation}
+            <div className="form-row">
+              <div className="form-group">
+                <label>Division <span className="required">*</span></label>
+                <select
+                  name="division"
+                  value={formData.division}
                   onChange={handleChange}
-                  maxLength="500"
-                  rows="5"
                   required
-                ></textarea>
-                <div className="char-count">{formData.motivation.length}/500</div>
+                >
+                  <option value="">Select Your Division</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                </select>
               </div>
 
-              <div className="form-row">
-                <div className="form-group">
-                  <label>Your Domain <span className="required">*</span></label>
-                  <select
-                    name="domain"
-                    value={formData.domain}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="">Select Your Domain</option>
-                    <option value="frontend">Frontend Development</option>
-                    <option value="backend">Backend Development</option>
-                    <option value="fullstack">Full Stack Development</option>
-                    <option value="mobile">Mobile Development</option>
-                    <option value="ml">Machine Learning / AI</option>
-                    <option value="cloud">Cloud / DevOps</option>
-                    <option value="design">UI/UX Design</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
+              <div className="form-group">
+                <label>Registration Number <span className="required">*</span></label>
+                <input
+                  type="text"
+                  name="registrationNumber"
+                  placeholder="Enter registration number"
+                  value={formData.registrationNumber}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
 
-                <div className="form-group">
-                  <label>Best Project (GitHub Link) Not Compulsory</label>
-                  <input
-                    type="url"
-                    name="projectLink"
-                    placeholder="https://github.com/username/project"
-                    value={formData.projectLink}
-                    onChange={handleChange}
-                  />
-                </div>
+            <div className="form-row">
+              <div className="form-group">
+                <label>Phone Number <span className="required">*</span></label>
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  placeholder="Enter 10-digit phone number"
+                  pattern="[0-9]{10}"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
+                  required
+                />
               </div>
 
-              <button type="submit" className="submit-btn">Submit Form</button>
+              <div className="form-group">
+                <label>Priority (1-5) <span className="required">*</span></label>
+                <input
+                  type="number"
+                  name="priority"
+                  placeholder="Rate GDSC priority (1-5)"
+                  min="1"
+                  max="5"
+                  value={formData.priority}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
 
-              <p className="form-footer">
-                By submitting this form, you agree to join our amazing community of developers!
-              </p>
+            <div className="form-group full-width">
+              <label>Why do you want to join {abbr}? <span className="required">*</span></label>
+              <textarea
+                name="motivation"
+                placeholder={`Tell us your motivation to join ${clubName}...`}
+                value={formData.motivation}
+                onChange={handleChange}
+                maxLength="500"
+                rows="5"
+                required
+              ></textarea>
+              <div className="char-count">{formData.motivation.length}/500</div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label>Your Domain <span className="required">*</span></label>
+                <select
+                  name="domain"
+                  value={formData.domain}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select Your Domain</option>
+                  <option value="frontend">Frontend Development</option>
+                  <option value="backend">Backend Development</option>
+                  <option value="fullstack">Full Stack Development</option>
+                  <option value="mobile">Mobile Development</option>
+                  <option value="ml">Machine Learning / AI</option>
+                  <option value="cloud">Cloud / DevOps</option>
+                  <option value="design">UI/UX Design</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div className="form-group">
+                <label>Best Project (GitHub Link) Not Compulsory</label>
+                <input
+                  type="url"
+                  name="projectLink"
+                  placeholder="https://github.com/username/project"
+                  value={formData.projectLink}
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+
+            <button type="submit" className="submit-btn">Submit Form</button>
+
+            <p className="form-footer">
+              By submitting this form, you agree to join our amazing community of developers!
+            </p>
           </form>
         )}
       </div>

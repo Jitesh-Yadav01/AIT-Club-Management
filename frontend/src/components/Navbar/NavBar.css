@@ -2,7 +2,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 18px;
+  top: 0;
+  padding-top :20px;
   display: flex;
   align-items: center;
   justify-content: center;

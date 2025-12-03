@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import MainContent from './components/MainContent'
 
-import Footer from './components/Footer'
+import Footer from './sections/Footer/Footer'
 
 export default function App() {
   // const [loading, setLoading] = useState(true)

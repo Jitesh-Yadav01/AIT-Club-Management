@@ -147,10 +147,15 @@
   margin-right: calc(50% - 50vw);
   width: 100vw;
   box-sizing: border-box;
+  border: 10px solid #0f2a70;
+  border-radius: 0;
+  border-top: none;
   border-bottom: 10px solid #0f2a70;
   padding-bottom: 48px;
   background: transparent;
   animation: fadeUp .35s ease both;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .cards {
