@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../sections/Clubs/club.css'
 import KnowMore from './KnowMore'
 
-export default function ClubCard({ abbr, name, img, desc, focusAreas = [], activities = [], who, keywords = [], events = [], onApply }) {
+export default function ClubCard({ abbr, name, img, desc, focusAreas = [], activities = [], who, keywords = [], events = [], media = [],onApply }) {
   const [showKnow, setShowKnow] = useState(false)
   const knowMore = () => setShowKnow(true)
 
@@ -66,7 +66,7 @@ export default function ClubCard({ abbr, name, img, desc, focusAreas = [], activ
         Click Here to Apply
       </button>
       <button className='know-btn' onClick={()=>knowMore()}>Know More</button>
-      <KnowMore open={showKnow} onClose={()=>setShowKnow(false)} club={{abbr,name,img,desc,focusAreas,activities,who,keywords,events}} />
+      <KnowMore open={showKnow} onClose={()=>setShowKnow(false)} club={{abbr,name,media}} />
     </article>
   )
 }
