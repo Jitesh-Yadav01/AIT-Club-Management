@@ -26,9 +26,12 @@ export default function Navbar(){
         <img src={logo} alt="AIT Pune" className="logo"  onClick={()=>navigate('/')}/>
       </div>
       {isMobile && (
+        <>
+        <button className='btn-primary absolute right-[80px]' onClick={()=>navigate("/login")}>Login</button>
         <div className="nav-right">
           <Hamburger open={open} onClick={handleHamburger} />
         </div>
+        </>
       )}
       {!isMobile && (
         <nav className="nav-center inline-flex" role="navigation" aria-label="Top navigation">
@@ -40,15 +43,13 @@ export default function Navbar(){
             <li><a href="#calendar">Calender</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-          <button className='btn-primary absolute right-10' onClick={()=>navigate("/login")}>Login</button>
+          <button className='btn-primary absolute right-[80px]' onClick={()=>navigate("/login")}>Login</button>
         </nav>
       )}
       {isMobile && (
         <SideBar open={open} onClose={handleCloseSidebar} />
       )}
-      <div className="signinBtn absolute right-[70px]">
-        <button className=' bg-blue-950 text-white font-bold text-[13px] p-1 m-1 rounded-2xl'  style={{padding:"6px 14px "}}> Sign In</button>
-      </div>
+      
     </header>
   )
 }
