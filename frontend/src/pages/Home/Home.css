@@ -4,8 +4,12 @@
 }
 
 .blue-hero{
-  color: #0f3b86;
+  color: rgb(36, 149, 36);
 
+}
+
+.home-hero{
+    background-image: url('../../assets/homebg.svg');
 }
 
 .syncLogoDiv{
@@ -14,33 +18,27 @@
 
 
 .gray-hero{
-     color: #5b6a7a;
+     color: red;
 }
+.syncAITdesigned{
+    width: 400;
+}
+
+
 .hero{
     width: 45vw;
     /* margin-left: 100px; */
-    line-height: 70px;
+    line-height: 40px;
     text-align: left;
     font-family: "Poppins";
-    font-weight: 700;
-    font-size: 65px;
-}
-.line1{
-    margin-top: 20px;
-    text-align: left;
-    line-height: 1px;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 36px;
 }
 
-.line2{
-    margin-top: 20px;
-    text-align: left;
-    font-weight: 500;
-    color: rgb(225, 44, 44);
-}
+
 .hero-btn{
     border: 1px solid #5b6a7a;
-    margin:20px 10px 20px 0;
+    margin:0px 10px 20px 0;
     width: 200px;
     padding: 2px 6px;
     border-radius: 20px;
@@ -62,28 +60,27 @@ object-fit: none;
 
 }
 .hero-div{
-    background-image: "./assets/clblogos/clublogos.svg";
-    margin:auto
+    /* background-image: "./assets/clblogos/clublogos.svg"; */
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
-.hero{
-    font-size: 44px;
-    line-height: 50px;
-    width: 80vw;
-    margin: auto;
-    text-align: center;
 
+.home-hero{
+    background: none;
 }
-.line1,.line2{
-    font-size: 14px;
-    text-align: center;
-}
-.line2{
-    font-size: 18px;
-    padding: 10px;
+.clubCollectionDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .hero-btn-div{
     justify-content: center;
-    margin: 10px 0;
     
 }
 .hero-btn{
@@ -93,7 +90,11 @@ object-fit: none;
     padding: 8px 10px;
 }
 
-
+.hero{
+    font-weight: 600;
+    width: 70vw;
+    text-align: center;
+}
 .page-head{
     flex-direction: column;
 }
@@ -101,9 +102,13 @@ object-fit: none;
 .secondary-hero-div{
     padding: 7px;
 }
-.syncLogoDiv{
-    display: flex;
-    justify-content: center;
+
+.syncAITdesigned{
+    margin-top:-10px;
+    width: 350px;
+    margin: 10px;
 }
+   
+
 }
 
