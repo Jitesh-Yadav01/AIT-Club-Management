@@ -27,8 +27,8 @@ export default function Navbar(){
       </div>
       {isMobile && (
         <>
-        <button className='btn-primary absolute right-[80px]' onClick={()=>navigate("/login")}>Login</button>
         <div className="nav-right">
+          <button className='btn-primary absolute right-15' onClick={()=>navigate("/login")}>Login</button>
           <Hamburger open={open} onClick={handleHamburger} />
         </div>
         </>
@@ -43,7 +43,7 @@ export default function Navbar(){
             <li><a href="#calendar">Calender</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-          <button className='btn-primary absolute right-[80px]' onClick={()=>navigate("/login")}>Login</button>
+          <button className='btn-primary absolute right-10' onClick={()=>navigate("/login")}>Login</button>
         </nav>
       )}
       {isMobile && (
