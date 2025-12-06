@@ -121,6 +121,10 @@
   .nav-right {
     display: flex;
   }
+  .signinBtn{
+    right: 90px;
+    top: 0;
+  }
   .nav-center {
     position: absolute;
     left: 0;

@@ -46,6 +46,9 @@ export default function Navbar(){
       {isMobile && (
         <SideBar open={open} onClose={handleCloseSidebar} />
       )}
+      <div className="signinBtn absolute right-[70px]">
+        <button className=' bg-blue-950 text-white font-bold text-[13px] p-1 m-1 rounded-2xl'  style={{padding:"6px 14px "}}> Sign In</button>
+      </div>
     </header>
   )
 }
