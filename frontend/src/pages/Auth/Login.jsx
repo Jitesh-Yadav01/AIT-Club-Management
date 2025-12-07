@@ -13,8 +13,8 @@ const Login = () => {
 
   // This is just for demo purpose..Please replace this shitty ai-code with your creativity. Best Wishes from @Mytricks-Code
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="w-full max-w-md bg-transparent backdrop-blur-xl border border-slate-700/70 rounded-2xl shadow-2xl px-8 py-10">
+    <div className="h-screen md:h-auto mt-8 mb-8 flex items-center justify-center">
+      <div className="w-full max-w-md bg-transparent md:backdrop-blur-xl border border-slate-700/70 rounded-2xl shadow-2xl px-8 py-10">
         {/* Header */}
         <div className="mb-8 text-center">
           <h1 className="text-2xl font-semibold tracking-tight">

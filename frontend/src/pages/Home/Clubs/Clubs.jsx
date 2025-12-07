@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react'
-import ClubCard from '../../components/ClubCard'
-import ApplicationForm from '../../components/ApplicationForm'
+import ClubCard from '../../../components/ClubCard'
+import ApplicationForm from '../../../components/ApplicationForm'
 import './club.css'
 
 export default function MainContent(){
