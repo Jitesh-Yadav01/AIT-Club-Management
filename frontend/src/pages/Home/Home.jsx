@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Loader from '../../components/Loader/Loader'
 import './Home.css'
+import { useNavigate } from 'react-router-dom'
 import Logocollections from "../../assets/clublogos.svg"
 import Synclogo from "../../assets/synclogo.svg"
 import SyncAIT from "../../assets/syncaithome.svg"
@@ -20,6 +21,7 @@ export default function Home() {
 		return <Loader />
 	}
 	*/
+	const navigate = useNavigate()
 	return (
 
 		<section id="home" className="home-hero" >
@@ -38,7 +40,7 @@ export default function Home() {
 					<img className='w-[70vw] clubCollection' src={Logocollections} alt="" />
 					<div className='flex hero-btn-div'>
 							<button className='hero-btn bg-blue-300 font-medium'>ANNOUNCEMENTS</button>
-							<button className='hero-btn font-medium'>ALL CLUBS</button>
+							<button className='hero-btn font-medium cursor-pointer' onClick={()=>navigate('/clubs')}>ALL CLUBS</button>
 						</div>
 				</div>
 			</div>
