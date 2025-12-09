@@ -1,5 +1,8 @@
 import React from 'react'
 import { useLocation, Navigate } from 'react-router-dom';
+import Sidebar from '../../components/SideBar/sidebar';
+import Dashboard from '../../components/SideBar/dashboard';
+
 const SePanel = () => {
   const location = useLocation();
 
@@ -7,7 +10,15 @@ const SePanel = () => {
     return <Navigate to="/login" replace />;
   }
   return (
-    <div>SePanel</div>
+      <div className="flex w-full h-[85vh] gap-[var(--gap)]">
+      <div className="w-72 flex-shrink-0 h-full rounded-[var(--radius)] overflow-hidden">
+        <Sidebar />
+      </div>
+  <div className="profile-main-card">
+    {/* header etc. */}
+    <Dashboard />
+  </div>
+</div>  
   )
 }
 

@@ -1,0 +1,229 @@
+/* ROOT: make dashboard fill all remaining space in parent */
+.dashboard-root {
+  flex: 1;                 /* expands inside parent flex container */
+  min-height: 0;           /* allows internal scrolling if needed */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* generic section card */
+.dash-section {
+  border-radius: 18px;
+  padding: 16px;
+}
+.profile-layout {
+  display: flex;
+  height: 100vh;
+  gap: 20px;
+}
+
+/* left sidebar fixed width */
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+/* right white card */
+.profile-main-card {
+  flex: 1;
+  height: calc(100vh - 120px); /* Adjust based on navbar height */
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevents content from overflowing parent */
+}
+.dashboard-root {
+  flex: 1;
+  overflow-y: auto;  /* ENABLE SCROLL */
+  padding-right: 10px; /* Looks cleaner with space */
+}
+
+/* Optional: Custom Scrollbar */
+.dashboard-root::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dashboard-root::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 10px;
+}
+
+.dashboard-root::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.notif-logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+
+.dash-section--grey {
+  background: #dedede;
+}
+
+.dash-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* ------------- NOTIFICATIONS ------------- */
+
+.notif-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.notif-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.notif-card-logo {
+  margin-right: 18px;
+}
+
+.dash-logo-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 90deg,
+    #4285f4,
+    #ea4335,
+    #fbbc05,
+    #34a853,
+    #4285f4
+  );
+}
+
+.notif-card-text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.notif-card-text p {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+/* ------------- TASKS ------------- */
+
+.tasks-header-row {
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tasks-header-logo {
+  background: #ffffff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.tasks-header-pill {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* main area */
+.tasks-main {
+  background: #ececec;
+  border-radius: 14px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 12px;
+}
+
+.tasks-left-box {
+  background: #ffffff;
+  border-radius: 12px;
+  height: 100%;
+  padding: 10px 12px;
+}
+
+.tasks-left-box h3 {
+  font-size: 14px;
+}
+
+/* right chips */
+.tasks-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-chip {
+  background: #ffd6d6;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+/* ------------- TABLE + CREATE TASK ------------- */
+
+.table-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.table-pill {
+  background: #6b6b6b;
+  color: #ffffff;
+  padding: 6px 20px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.create-box {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-btn {
+  background: #5f6266;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 18px 80px;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ------------- RESPONSIVE ------------- */
+
+@media (max-width: 1024px) {
+  .notif-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tasks-main {
+    grid-template-columns: 1fr;
+  }
+}
