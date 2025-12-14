@@ -15,7 +15,7 @@ const FePanel = () => {
     <>
       {/* Mobile toggle button */}
       <button
-        className="md:hidden fixed bottom-6 right-6 z-40 bg-[var(--accent)] text-white p-3 rounded-full shadow-lg"
+        className="md:hidden fixed top-24 left-6 z-40 bg-[var(--accent)] text-white p-3 rounded-full shadow-lg"
         onClick={() => setSidebarOpen(!sidebarOpen)}
       >
         ☰
