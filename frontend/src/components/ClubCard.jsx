@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../pages/Home/Clubs/club.css'
 import KnowMore from './KnowMore'
 
-export default function ClubCard({ abbr, name, img, desc, focusAreas = [], activities = [], who, keywords = [], events = [], media = [],onApply }) {
+export default function ClubCard({ abbr, name, fullForm, img, desc, focusAreas = [], activities = [], who, keywords = [], events = [], media = [],onApply }) {
   const [showKnow, setShowKnow] = useState(false)
   const knowMore = () => setShowKnow(true)
 
@@ -10,17 +10,19 @@ export default function ClubCard({ abbr, name, img, desc, focusAreas = [], activ
     <article className="club" aria-labelledby={`${abbr}-title`}>
       <div className="top">
         <img src={img} alt={`${name} logo`} className="club-logo" />
-        <h3 id={`${abbr}-title`} className="section-title title-violet">{name}</h3>
+        <h3 id={`${abbr}-title`} className="section-title title-violet">
+          {name} {fullForm && <span>({fullForm})</span>}
+        </h3>
       </div>
 
       <p className="lead">{desc}</p>
 
       {keywords && keywords.length > 0 && (
-        <ul className="keywords-list" aria-label={`${abbr} keywords`}>
+        <div className="keywords-list" aria-label={`${abbr} keywords`}>
           {keywords.map((k, idx) => (
-            <li key={k + idx}>{k}</li>
+            <span key={k + idx} className="tag">{k}</span>
           ))}
-        </ul>
+        </div>
       )}
 
       <div className="info-grid">
@@ -66,7 +68,7 @@ export default function ClubCard({ abbr, name, img, desc, focusAreas = [], activ
         Click Here to Apply
       </button>
       <button className='know-btn' onClick={()=>knowMore()}>Know More</button>
-      <KnowMore open={showKnow} onClose={()=>setShowKnow(false)} club={{abbr,name,media}} />
+      <KnowMore open={showKnow} onClose={()=>setShowKnow(false)} club={{abbr,name,fullForm,media}} />
     </article>
   )
 }

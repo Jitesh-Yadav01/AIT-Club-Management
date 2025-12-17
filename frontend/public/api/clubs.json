@@ -1,12 +1,13 @@
 [
   {
     "abbr": "OSS",
-    "name": "OSS Club (Open Source Software Club)",
+    "name": "OSS Club",
+    "fullForm": "Open Source Software Club",
     "img": "/src/assets/clublogos/oss.svg",
     "desc": "Encouraging students to contribute to open source projects and learn collaborative software development.",
     "focusAreas": [
-      "■ Open source contribution workflows",
-      "■ Contribution (Git/Github)"
+      "Open source contribution workflows",
+      "Contribution (Git/Github)"
     ],
     "media": [
       "https://images.unsplash.com/photo-1607569490015-7101095605ed?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -14,24 +15,25 @@
       "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=80"
     ],
     "activities": [
-    "● INNERVE",
-    "● FSOC",
-    "● Graphica",
-    "● Spark",
-    "● Internal SIH",
-    "● Replica"
+    "INNERVE",
+    "FSOC",
+    "Graphica",
+    "Spark",
+    "Internal SIH",
+    "Replica"
     ],
     "who": "FE,SE"
   },
   {
     "abbr": "GDG",
-    "name": "GDG AIT Pune (Google Developer Group)",
+    "name": "GDG AIT Pune",
+    "fullForm": "Google Developer Group",
     "img": "/src/assets/clublogos/google-developers.svg",
     "desc": "Community-driven developer group focused on practical developer skills and technology learning.",
     "focusAreas": [
-      "■ Web & mobile development",
-      "■ Cloud and architecture",
-      "■ Developer tooling and best practices"
+      "Web & mobile development",
+      "Cloud and architecture",
+      "Developer tooling and best practices"
     ],
     "media": [
       "https://images.unsplash.com/photo-1531297461136-82lw9b44d940?auto=format&fit=crop&w=800&q=80",
@@ -39,24 +41,25 @@
       "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=80"
     ],
     "activities": [
-      "● Frontend Jams",
-      "● Backend Jams",
-      "● FSOC",
-      "● Enliven",
-      "● Google Cloud Workshop",
-      "● Android Development Session"
+      "Frontend Jams",
+      "Backend Jams",
+      "FSOC",
+      "Enliven",
+      "Google Cloud Workshop",
+      "Android Development Session"
     ],
     "who": "FE,SE"
   },
   {
     "abbr": "CP",
-    "name": "CP Club (Not what you thought)",
+    "name": "CP Club",
+    "fullForm": "Competitive Programming",
     "img": "/src/assets/clublogos/cp.svg",
     "desc": "Focused training and practice for programming contests and technical interviews.",
     "focusAreas": [
-      "■ Data structures & algorithms",
-      "■ Problem-solving strategies",
-      "■ Contest practice and timing"
+      "Data structures & algorithms",
+      "Problem-solving strategies",
+      "Contest practice and timing"
     ],
     "media": [
       "https://images.unsplash.com/photo-1531297461136-82lw9b44d940?auto=format&fit=crop&w=800&q=80",
@@ -64,59 +67,62 @@
       "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=80"
     ],
     "activities": [
-      "● CODEFT 4.0",
-      "● CRACK 5.1",
-      "● CRACK 5.2",
-      "● KICKSTARTER"
+      "CODEFT 4.0",
+      "CRACK 5.1",
+      "CRACK 5.2",
+      "KICKSTARTER"
     ],
     "who": "FE,SE"
   },
 
   {
     "abbr": "PR",
-    "name": "PR Cell (Public Relations Cell)",
+    "name": "PR Cell",
+    "fullForm": "Public Relations Cell",
     "img": "/src/assets/clublogos/pr.svg",
     "desc": "Handles campus branding, outreach, media communication, and event promotions.",
     "focusAreas": [
-      "■ Branding & communication",
-      "■ Social media management",
-      "■ Event marketing"
+      "Branding & communication",
+      "Social media management",
+      "Event marketing"
     ],
     "activities": [
-      "● Campus outreach",
-      "● Event promotions",
-      "● Media coordination"
+      "Campus outreach",
+      "Event promotions",
+      "Media coordination"
     ],
     "who": "FE,SE"
   },
 
   {
     "abbr": "ECELL",
-    "name": "E-Cell (Entrepreneurship Cell)",
+    "name": "E-Cell",
+    "fullForm": "Entrepreneurship Cell",
     "img": "/src/assets/clublogos/ecell.svg",
     "desc": "Promotes entrepreneurship, innovation, and startup culture among students.",
     "focusAreas": [
-      "■ Startup fundamentals",
-      "■ Ideation & innovation",
-      "■ Business models & pitching"
+      "Startup fundamentals",
+      "Ideation & innovation",
+      "Business models & pitching"
     ],
     "activities": [
-      "● Startup Bootcamp",
-      "● Pitch Deck Workshop",
-      "● Incubation support"
+      "Startup Bootcamp",
+      "Pitch Deck Workshop",
+      "Incubation support"
     ],
     "who": "FE,SE"
   },
 
   {
     "abbr": "GDXR",
-    "name": "GDXR (Game Dev & Extended Reality Club)",
+    "name": "GDXR",
+    "fullForm": "Game Dev & Extended Reality Club",
     "img": "/src/assets/clublogos/gdxr.svg",
     "desc": "Dedicated to game development, AR/VR technologies, and immersive experiences.",
     "focusAreas": [
-      "■ Game engines (Unity/Unreal)",
-      "■ AR/VR development",
-      "■ 3D modeling & interaction"
+      "Game engines (Unity/Unreal)",
+      "AR/VR development",
+      "3D modeling & interaction"
     ],
     "activities": ["● GameJam", "● XR Workshop", "● Dev Sprints"],
     "who": "FE,SE"
@@ -124,36 +130,38 @@
 
   {
     "abbr": "ISDF",
-    "name": "ISDF (Information Security & Digital Forensics Club)",
+    "name": "ISDF",
+    "fullForm": "Information Security & Digital Forensics Club",
     "img": "/src/assets/clublogos/isdf.svg",
     "desc": "Focuses on cybersecurity, ethical hacking, and digital forensics skills.",
     "focusAreas": [
-      "■ Ethical hacking",
-      "■ Network & system security",
-      "■ Digital forensics"
+      "Ethical hacking",
+      "Network & system security",
+      "Digital forensics"
     ],
     "activities": [
-      "● CTF Challenges",
-      "● Cybersecurity Workshops",
-      "● Forensics Lab Training"
+      "CTF Challenges",
+      "Cybersecurity Workshops",
+      "Forensics Lab Training"
     ],
     "who": "FE,SE"
   },
 
   {
     "abbr": "RND",
-    "name": "RnD Cell (Research & Development Cell)",
+    "name": "RnD Cell",
+    "fullForm": "Research & Development Cell",
     "img": "/src/assets/clublogos/rnd.svg",
     "desc": "Encourages research-thinking, publications, and innovation-driven projects.",
     "focusAreas": [
-      "■ Research methodology",
-      "■ Academic writing",
-      "■ Innovation projects"
+      "Research methodology",
+      "Academic writing",
+      "Innovation projects"
     ],
     "activities": [
-      "● Research Paper Workshops",
-      "● Project Mentorship",
-      "● Publication Guidance"
+      "Research Paper Workshops",
+      "Project Mentorship",
+      "Publication Guidance"
     ],
     "who": "FE,SE"
   },
@@ -164,32 +172,33 @@
     "img": "/src/assets/clublogos/cycling.svg",
     "desc": "Promotes fitness and community through regular cycling meetups and long rides.",
     "focusAreas": [
-      "■ Fitness & endurance",
-      "■ Group riding skills",
-      "■ Safe cycling practices"
+      "Fitness & endurance",
+      "Group riding skills",
+      "Safe cycling practices"
     ],
     "activities": [
-      "● Weekend Rides",
-      "● Long-Distance Trails",
-      "● Cycling Awareness Events"
+      "Weekend Rides",
+      "Long-Distance Trails",
+      "Cycling Awareness Events"
     ],
     "who": "FE,SE"
   },
 
   {
     "abbr": "NSS",
-    "name": "National Service Scheme (NSS)",
+    "name": "NSS",
+    "fullForm": "National Service Scheme",
     "img": "/src/assets/clublogos/oss.svg",
     "desc": "A volunteer organisation dedicated to social service and community development.",
     "focusAreas": [
-      "■ Community service",
-      "■ Social awareness",
-      "■ Rural development"
+      "Community service",
+      "Social awareness",
+      "Rural development"
     ],
     "activities": [
-      "● Blood Donation Camps",
-      "● Cleanliness Drives",
-      "● Social Outreach Programs"
+      "Blood Donation Camps",
+      "Cleanliness Drives",
+      "Social Outreach Programs"
     ],
     "who": "FE,SE"
   },
@@ -200,32 +209,33 @@
     "img": "/src/assets/clublogos/oss.svg",
     "desc": "Encourages environmental conservation, sustainability, and nature awareness.",
     "focusAreas": [
-      "■ Environmental protection",
-      "■ Sustainability projects",
-      "■ Wildlife awareness"
+      "Environmental protection",
+      "Sustainability projects",
+      "Wildlife awareness"
     ],
     "activities": [
-      "● Plantation Drives",
-      "● Nature Walks",
-      "● Eco-Awareness Campaigns"
+      "Plantation Drives",
+      "Nature Walks",
+      "Eco-Awareness Campaigns"
     ],
     "who": "FE,SE"
   },
 
   {
     "abbr": "MAG",
-    "name": "Magboard (Magazine & Editorial Board)",
+    "name": "Magboard",
+    "fullForm": "Magazine & Editorial Board",
     "img": "/src/assets/clublogos/magboard.svg",
     "desc": "Manages college magazine, newsletter writing, and creative editorial work.",
     "focusAreas": [
-      "■ Creative writing",
-      "■ Editing & publishing",
-      "■ Journalism & reporting"
+      "Creative writing",
+      "Editing & publishing",
+      "Journalism & reporting"
     ],
     "activities": [
-      "● College Magazine",
-      "● Newsletter Editing",
-      "● Writing Competitions"
+      "College Magazine",
+      "Newsletter Editing",
+      "Writing Competitions"
     ],
     "who": "FE,SE"
   },
@@ -235,14 +245,14 @@
     "img": "/src/assets/clublogos/oss.svg",
     "desc": "Central body managing all technical clubs and driving innovation, tech events, and project-based learning across the institute.",
     "focusAreas": [
-      "■ Coordination of technical clubs",
-      "■ Organizing hackathons & tech festivals",
-      "■ Promoting research, innovation, and development"
+      "Coordination of technical clubs",
+      "Organizing hackathons & tech festivals",
+      "Promoting research, innovation, and development"
     ],
     "activities": [
-      "● Institute Tech Fest",
-      "● Inter-Club Hackathons",
-      "● Technical Workshops & Seminars"
+      "Institute Tech Fest",
+      "Inter-Club Hackathons",
+      "Technical Workshops & Seminars"
     ],
     "who": "FE,SE"
   },
@@ -253,14 +263,14 @@
     "img": "/src/assets/clublogos/oss.svg",
     "desc": "Oversees cultural clubs and promotes art, creativity, and cultural expression through events and performances.",
     "focusAreas": [
-      "■ Performing arts (dance, music, drama)",
-      "■ Literary & creative arts",
-      "■ Cultural festivals & talent showcases"
+      "Literary & creative arts",
+      "Performing arts (dance, music, drama)",
+      "Cultural festivals & talent showcases"
     ],
     "activities": [
-      "● Annual Cultural Fest",
-      "● Talent Nights",
-      "● Inter-College Cultural Events"
+      "Annual Cultural Fest",
+      "Talent Nights",
+      "Inter-College Cultural Events"
     ],
     "who": "FE,SE"
   }
